@@ -8,25 +8,23 @@ p {
     color: black;
 }
 button {
-    background-color: blue;
+    background-color: white;
     width: 200px;
     font-size: 20px;
     padding: 10px;
     border-radius: 5px;
     border: 3px solid black;
-    color: white;
+    color:black;
     cursor: pointer;
+}
 
-    .button1 {
-        position: absolute;
-        top: 800px;
-        right: 960px;
-
-    }
-
-    .button2 {
-        position: absolute;
-        top: 800px;
-        right: 960px;
-    }
+.button1 {
+    position: relative;
+    top: 800px;
+    right: 500px;
+}
+.button2 {
+    position: relative;
+    top: 900px;
+    right: 400px;
 }
