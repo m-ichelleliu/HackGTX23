@@ -7,6 +7,9 @@ h1 {
 p {
     color: black;
 }
+a {
+    text-decoration : none;
+}
 button {
     background-color: white;
     width: 200px;
@@ -16,15 +19,13 @@ button {
     border: 3px solid black;
     color:black;
     cursor: pointer;
+    margin-top: 670px;
 }
 
 .button1 {
-    position: relative;
-    top: 800px;
-    right: 500px;
+    margin-left: 550px;
 }
+
 .button2 {
-    position: relative;
-    top: 900px;
-    right: 400px;
+    margin-left: 10px;
 }
