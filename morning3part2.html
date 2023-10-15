@@ -2,21 +2,33 @@
 <html>
 <head>
   <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      background-image: url("Images_Folder/3_class_2.png");
-      background-size: cover;
-    }
-  </style>
+  <script src="script.js" defer> </script>
+
 </head>
 
 <body>
 
-<div class="box">Text message</div>
+  <div class="box">There is an online assignment due at the end of class.</div>
 
-<a href="laptopdying.html">
+<a>
   <button class="buttonNext">Next</button>
 </a>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script>
+  $(".buttonNext").click(checkLaptop);
+  
+  function checkLaptop() {
+    if (hasCookie("item-laptop")) {
+      console.log("You have your laptop!");
+      window.location.replace("??");
+    } else {
+      console.log("You forgot your laptop!");
+      window.location.replace("/laptopdying.html");
+    }
+  } 
+
+</script>
 
 </body>
 </html>
