@@ -3,7 +3,7 @@ body {
 }
 h1 {
     color: black;
-    font-family: 'Frijole';
+    font-
 }
 p {
     color: black;
@@ -11,7 +11,13 @@ p {
 a {
     text-decoration : none;
 }
+
 button {
+    margin: 0 auto;
+    display: block;
+}
+
+/* button {
     background-color: white;
     width: 200px;
     font-size: 20px;
@@ -21,7 +27,7 @@ button {
     color:black;
     cursor: pointer;
     margin-top: 670px;
-}
+} */
 
 .button1 {
     margin-left: 550px;
@@ -29,4 +35,8 @@ button {
 
 .button2 {
     margin-left: 10px;
+}
+
+.buttonNext {
+    margin-right: 10 px;
 }
