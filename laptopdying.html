@@ -2,6 +2,7 @@
 <html>
 <head>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer> </script>
   <style>
     body {
       background-image: url("Images_Folder/3_class_fail_laptopdie.png");
@@ -12,11 +13,27 @@
 
 <body>
 
-<div class="box">Text message</div>
+    <div class="box">There is an online assignment due at the end of class.</div>
 
-<a href="laptopdyingpart2.html">
-  <button class="buttonNext">Next</button>
+<a>
+    <button class="buttonNext">Next</button>
 </a>
-
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+      $(".buttonNext").click(checkLaptop);
+      
+      function checkLaptop() {
+        if (hasCookie("item-charger")) {
+          console.log("You have your charger!");
+          window.location.replace("/chargerclasssuccess.html");
+        } else {
+          console.log("You forgot your charger!");
+          window.location.replace("/laptopdyingpart2.html");
+        }
+      } 
+    
+    </script>
+    
 </body>
 </html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer> </script>
+  <style>
+    body {
+      background-image: url("Images_Folder/4_lunch_chickfila.png");
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body>
+
+    <div class="box">You arrive at Chick-Fil-A.</div>
+    
+    <a>
+        <button class="buttonNext">Next</button>
+    </a>
+        
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script>
+          $(".buttonNext").click(checkLaptop);
+          
+          function checkLaptop() {
+            if (hasCookie("item-wallet")) {
+              console.log("You have your wallet!");
+              window.location.replace("/chickfilasuccess.html");
+            } else {
+              console.log("You forgot your wallet! Go to the dining hall.");
+              window.location.replace("/forget.html");
+            }
+          } 
+        
+        </script>
+
+</body>
+</html>
