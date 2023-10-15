@@ -1,3 +1,25 @@
+.item:hover {
+    cursor: pointer;
+    filter: drop-shadow(5px 5px 5px rgb(255 255 0));
+}
+
+
+
+body {
+    background-image: url("assets/classroom.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#items {
+    background-color: white;
+}
+
+.selected-item {
+    filter: brightness(200%) drop-shadow(5px 5px 5px rgb(0 255 0));
+}
+
 @font-face {
     font-family: customfont;
     src = url(WolvesRuin.ttf);
@@ -9,10 +31,6 @@
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-body {
-    background-color: white;
 }
 
 h1 {
