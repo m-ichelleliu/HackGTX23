@@ -28,7 +28,7 @@ body {
 .hmpg {
     margin: 0;
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -38,7 +38,17 @@ h1 {
     font-family: 'Frijole';
     display: flex;
     justify-content: center;
+    text-align: center;
+    filter: drop-shadow(0 0 0.75rem crimson);
 }
+
+.name {
+    color: black;
+    font-size: 50px;
+    filter: drop-shadow(0 0 0.75rem crimson);
+}
+
+
 p {
     color: black;
 }
@@ -59,14 +69,14 @@ button {
     padding-top: 10px;
     padding-bottom: 10px;
   
-    background-color: #e8ae43;
+    background-color: #5a0404;
     border: none;
     font-size: 15px;
     font-family: 'Frijole';
     cursor: pointer;
     border-radius: 4px;
   
-    box-shadow: inset 0 0 0 0 #c2dbff/*#FFED66*/;
+    box-shadow: inset 0 0 0 0 #b6bab7;
     transition: ease-out 0.3s;
     outline: none;
     position: relative;
@@ -78,14 +88,14 @@ button {
   
   button:hover{
     cursor: pointer;
-    box-shadow: inset 350px 0 0 0 #c2dbff;
-    background-color: #c2dbff;
+    box-shadow: inset 350px 0 0 0 #b6bab7;
+    background-color: #b6bab7;
     /*border: solid;
     border-color: #c2dbff;*/ 
   }
   
   button:before{
-    /* transition: 0.5s all ease; */
+    /* transition: 0.3s all ease; */
     position: absolute;
     top: 0;
     left: 50%;
@@ -93,7 +103,7 @@ button {
     bottom: 0;
     opacity: 0;
     content: "";
-    background-color: #e86a43;
+    background-color: #7a240a;
   }
   
   button:hover:before{
