@@ -15,8 +15,7 @@ a {
 }
 
 button {
-    display: flex;
-    justify-content: center;
+    margin-left: 700px;
 }
 /* button {
     background-color: white;
@@ -36,4 +35,8 @@ button {
 
 .button2 {
     margin-left: 10px;
+}
+
+button {
+    margin-left: 500px;
 }
