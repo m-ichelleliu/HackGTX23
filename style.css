@@ -3,6 +3,8 @@
     filter: drop-shadow(5px 5px 5px rgb(255 255 0));
 }
 
+}
+
 #items {
     background-color: white;
 }
@@ -134,14 +136,14 @@ button {
     z-index:2;
     position: absolute;
     left: 30%;
-    bottom: 10%;
+    bottom: 20%;
 }
 
 .button2 {
     z-index:2;
     position: absolute;
     right: 30%;
-    bottom: 10%;
+    bottom: 20%;
     margin-left: 10px;
 }
 
