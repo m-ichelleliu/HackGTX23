@@ -137,7 +137,8 @@ button {
 } */
 
 .box {
-    line-height: 230px;
+    font-family: 'Frijole';
+    font-size: 2em;
     width: 90%;
     height: 350px;
     left: 5%;
@@ -153,16 +154,17 @@ button {
 .button1 {
     z-index:2;
     position: absolute;
-    left: 30%;
+    left: 15%;
     bottom: 15%;
+    width: 30%;
 }
 
 .button2 {
     z-index:2;
     position: absolute;
-    right: 30%;
+    right: 15%;
     bottom: 15%;
-    margin-left: 10px;
+    width: 30%;
 }
 
 .buttonRestart {
