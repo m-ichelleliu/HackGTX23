@@ -6,19 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML 5 Boilerplate</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+      body {
+        background-image: url("Images_Folder/2_1background.png");
+        background-size: cover;
+      }
+    </style>
+  <script src="script.js" defer> </script>
   </head>
   <body>
-    <div class="item" onclick="setCookie('item-umbrella', 'true', 80)"><img src="assets/items/umbrella.png"></div>
-
+    <div class="item-list">
+        <div class="item" onclick="setCookie('item-bandaid', 'true', 80)"><img class="item-image" src="Images_Folder/2_bandaid.png"></div>
+        <div class="item" onclick="setCookie('item-charger', 'true', 80)"><img class="item-image"  src="Images_Folder/2_charger.png"></div>
+        <div class="item" onclick="setCookie('item-clothes', 'true', 80)"><img class="item-image"  src="Images_Folder/2_clothes.png"></div>
+        <div class="item" onclick="setCookie('item-id', 'true', 80)"><img  class="item-image" src="Images_Folder/2_id.png"></div>
+        <div class="item" onclick="setCookie('item-key', 'true', 80)"><img  class="item-image" src="Images_Folder/2_key.png"></div>
+        <div class="item" onclick="setCookie('item-laptop', 'true', 80)"><img  class="item-image" src="Images_Folder/2_laptop.png"></div>
+        <div class="item" onclick="setCookie('item-pens', 'true', 80)"><img  class="item-image" src="Images_Folder/2_pens.png"></div>
+        <div class="item" onclick="setCookie('item-snack', 'true', 80)"><img  class="item-image" src="Images_Folder/2_snack.png"></div>
+        <div class="item" onclick="setCookie('item-textbook', 'true', 80)"><img  class="item-image" src="Images_Folder/2_textbook.png"></div>
+        <div class="item" onclick="setCookie('item-umbrella', 'true', 80)"><img  class="item-image" src="Images_Folder/2_umbrella.png"></div>
+    </div>
     <!-- <div id="items"></div> -->
 	
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script>
-        const btn = document.querySelector(".item");
+        function deleteCookie(cname) {
+            console.log("Deleting", cname, "from list");
+            document.cookie = cname + '=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+            return;
+        }
 
-        btn.addEventListener("click", toggleColor);
+        function deleteAllCookies() {
+            let ca = document.cookie.split(';');
+            for(let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                deleteCookie(ca[i]);
+            }
+        }
+
+        deleteAllCookies();
+
+        const btns = $(".item");
+
+        for (btn of btns) {
+            btn.addEventListener("click", toggleColor);
+        }
+
         function toggleColor(e) {
-            console.log("A")
+            console.log("Toggling color");
             console.log(e.currentTarget);
             if (e.target.classList.contains("selected-item")) {
                 e.target.classList.remove("selected-item");

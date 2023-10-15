@@ -1,3 +1,16 @@
+/* .item-list {
+    display: flex;
+    width: 100vw;
+} */
+
+.item {
+    display: inline-block;
+}
+.item-image {
+    width: 200px;
+    height: auto;
+}
+
 .item:hover {
     cursor: pointer;
     filter: drop-shadow(5px 5px 5px rgb(255 255 0));
