@@ -19,14 +19,27 @@
 
         <style>
             body {
-            background-image: url("Images_Folder/5_rain_4_success.png");
+            background-image: url("Images_Folder/5_rain_1.png");
             background-size: cover;
             }
         </style>
     </head>
 
 <body>
-    <div class="box">Your'e safe</div>
+    <div class="box">RAAAAAAAAIN!!!!!!!!</div>
+        <button class="buttonNext">Next</button>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+  $(".buttonNext").click(checkUmbrella);
+  
+  function checkUmbrella() {
+    if (hasCookie("item-umbrella")) {
+      console.log("You have your umbrella!");
+      window.location.replace("/rainf.html");
+    } else {
+      console.log("You forgot your umbrella!");
+      window.location.replace("/rainstart.html");
 
 </body>
 
