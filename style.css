@@ -1,0 +1,15 @@
+.item:hover {
+    cursor: pointer;
+    filter: drop-shadow(5px 5px 5px rgb(255 255 0));
+}
+
+body {
+    background-image: url("assets/classroom.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#items {
+    background-color: white;
+}

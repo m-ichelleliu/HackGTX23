@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <button onclick="setCookie('hi', 'yes', 80)">Hi</button>
+
+    <div class="item" onclick="setCookie('item-umbrella', 'true', 80)"><img src="assets/items/umbrella.png"></div>
+
+    <div id="items"></div>
+	
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        function setCookie(cname, cvalue, exdays) {
+            if (getCookie(cname).equals('true')) {
+                document.cookie = cname + '=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+            }
+            const d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            let expires = "expires="+d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+            renderItems()
+        }
+
+        function getItems() {
+            let items = []
+            let ca = document.cookie.split(';');
+            for(let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf("item-") == 0) {
+                    items.push(c.substring("item-".length, c.length - 5));
+                }
+            }
+            return items;
+        }
+
+        function renderItems() {
+            let items = getItems();
+            console.log(items);
+            $('#items').text(items);
+        }
+
+        function getCookie(cname) {
+            let name = cname + "=";
+            let ca = document.cookie.split(';');
+            for(let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        function checkCookie() {
+            let user = getCookie("username");
+            if (user != "") {
+                alert("Welcome again " + user);
+            } else {
+                user = prompt("Please enter your name:", "");
+                if (user != "" && user != null) {
+                setCookie("username", user, 365);
+                }
+            }
+        }
+    </script>
+  </body>
+</html>
