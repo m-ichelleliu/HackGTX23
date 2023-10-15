@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer> </script>
+  <style>
+    body {
+      background-image: url("Images_Folder/4_lunch_success.png");
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body>
+
+    <div class="box">You arrive at the dining hall.</div>
+    
+    <a>
+        <button class="buttonNext">Next</button>
+    </a>
+        
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script>
+          $(".buttonNext").click(checkLaptop);
+          
+          function checkLaptop() {
+            if (hasCookie("item-id")) {
+              console.log("You have your student ID!");
+              window.location.replace("/dininghallsuccess.html");
+            } else {
+              console.log("You forgot your student ID! You can't get food from the dining hall. You die of starvation.");
+              window.location.replace("/forgot2.html");
+            }
+          } 
+        
+        </script>
+
+</body>
+</html>
