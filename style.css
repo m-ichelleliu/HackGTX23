@@ -1,17 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Frijole&display=swap');
+
 /* .item-list {
     display: flex;
     width: 100vw;
 } */
 
+.buttonNext {
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+}
+
 .item {
     display: inline-block;
 }
 .item-image {
-    width: 200px;
+    width: 30vh;
     height: auto;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Frijole&display=swap');
 
 .item:hover {
     cursor: pointer;
@@ -53,6 +59,7 @@ h1 {
 p {
     color: black;
 }
+
 a {
     text-decoration : none;
 }
@@ -69,21 +76,23 @@ button {
     width: 150px;
     padding-top: 10px;
     padding-bottom: 10px;
-  
-    background-color: #5a0404;
+
+    background-color: #44330d;
     border: none;
     font-size: 15px;
     font-family: 'Frijole';
     cursor: pointer;
     border-radius: 4px;
   
-    box-shadow: inset 0 0 0 0 #b6bab7;
+    box-shadow: inset 0 0 0 0 #994412;
     transition: ease-out 0.3s;
     outline: none;
     position: relative;
     z-index: 1;
+    color: white;
     /*border: solid;
     border-color: #428df5;*/
+    color: white;
   
   }
   
@@ -128,6 +137,7 @@ button {
 } */
 
 .box {
+    line-height: 230px;
     width: 90%;
     height: 350px;
     left: 5%;
@@ -144,17 +154,20 @@ button {
     z-index:2;
     position: absolute;
     left: 30%;
-    bottom: 20%;
+    bottom: 15%;
 }
 
 .button2 {
     z-index:2;
     position: absolute;
     right: 30%;
-    bottom: 20%;
+    bottom: 15%;
     margin-left: 10px;
 }
 
-.buttonNext {
-    margin-right: 10 px;
+.buttonRestart {
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+
 }

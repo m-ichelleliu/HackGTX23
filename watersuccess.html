@@ -19,7 +19,7 @@
 
         <style>
             body {
-            background-image: url("Images_Folder/6_water_2.png");
+            background-image: url("Images_Folder/6_water_3_success.png");
             background-size: cover;
             }
         </style>
@@ -28,24 +28,9 @@
 <body>
     <div class="box">Your'e safe</div>
 
-    <a href="/water.html">
+    <a href="/phew.html">
         <button class="buttonNext">Next</button>
-    </a>
-
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script>
-    $(".buttonNext").click(checkWater);
-  
-    function checkWater() {
-      if (hasCookie("item-water")) {
-        console.log("You have your water!");
-        window.location.replace("/watersuccess.html");
-      } else {
-        console.log("You forgot your water!");
-        window.location.replace("/waterf.html");
-      }
-    }
-    </script>
+      </a>
 
 </body>
 
