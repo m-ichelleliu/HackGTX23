@@ -19,32 +19,20 @@
 
         <style>
             body {
-            background-image: url("Images_Folder/6_water_2.png");
+            background-image: url("Images_Folder/2_1background.png");
             background-size: cover;
             }
         </style>
     </head>
 
-<body>
-    <div class="box">Your'e safe</div>
+    <body class="hmpg">
+        <header>
+            <h1 class="name">Campus of Nightmares: Freshman's Survival</h1>
+            <h1 >Can you survive a day in college?</h1>
+            <a href="morning1.html">
+            <button class="hmpg-bttn">Start</button>
+            </a>
+        </header>
 
-        <button class="buttonNext">Next</button>
-
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script>
-    $(".buttonNext").click(checkWater);
-  
-    function checkWater() {
-      if (hasCookie("item-water")) {
-        console.log("You have your water!");
-        window.location.replace("/watersuccess.html");
-      } else {
-        console.log("You forgot your water!");
-        window.location.replace("/waterf.html");
-      }
-    }
-    </script>
-
-</body>
-
+    </body>
 </html>
