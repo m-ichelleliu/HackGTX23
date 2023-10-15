@@ -11,11 +11,6 @@
     filter: brightness(200%) drop-shadow(5px 5px 5px rgb(0 255 0));
 }
 
-@font-face {
-    font-family: customfont;
-    src = url(WolvesRuin.ttf);
-}
-
 .hmpg {
     margin: 0;
     position: absolute;
