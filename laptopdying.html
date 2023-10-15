@@ -13,11 +13,6 @@
 
 <body>
 
-    <div class="box">
-      <div class="box-text">
-        There is an online assignment due at the end of class.</div>
-      </div>
-
 <a>
     <button class="buttonNext">Next</button>
 </a>
@@ -27,6 +22,7 @@
       $(".buttonNext").click(checkLaptop);
       
       function checkLaptop() {
+        setCookie("");
         if (hasCookie("item-charger")) {
           console.log("You have your charger!");
           window.location.replace("chargerclasssuccess.html");
