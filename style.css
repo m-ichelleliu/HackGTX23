@@ -3,13 +3,9 @@ body {
 }
 h1 {
     color: black;
-<<<<<<< HEAD
-    font-
-=======
     font-family: 'Frijole';
     display: flex;
     justify-content: center;
->>>>>>> 31548aeb1c088a5292717431ccee26b38d8f1238
 }
 p {
     color: black;
@@ -19,15 +15,10 @@ a {
 }
 
 button {
-<<<<<<< HEAD
     margin: 0 auto;
     display: block;
 }
 
-=======
-    margin-left: 700px;
-}
->>>>>>> 31548aeb1c088a5292717431ccee26b38d8f1238
 /* button {
     background-color: white;
     width: 200px;
@@ -48,11 +39,6 @@ button {
     margin-left: 10px;
 }
 
-<<<<<<< HEAD
 .buttonNext {
     margin-right: 10 px;
-=======
-button {
-    margin-left: 500px;
->>>>>>> 31548aeb1c088a5292717431ccee26b38d8f1238
 }
