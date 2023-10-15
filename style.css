@@ -3,11 +3,17 @@
     width: 100vw;
 } */
 
+.buttonNext {
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+}
+
 .item {
     display: inline-block;
 }
 .item-image {
-    width: 300px;
+    width: 30vh;
     height: auto;
 }
 
@@ -53,6 +59,7 @@ h1 {
 p {
     color: black;
 }
+
 a {
     text-decoration : none;
 }
@@ -146,17 +153,20 @@ button {
     z-index:2;
     position: absolute;
     left: 30%;
-    bottom: 20%;
+    bottom: 15%;
 }
 
 .button2 {
     z-index:2;
     position: absolute;
     right: 30%;
-    bottom: 20%;
+    bottom: 15%;
     margin-left: 10px;
 }
 
-.buttonNext {
-    margin-right: 10 px;
+.buttonRestart {
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+
 }
