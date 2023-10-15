@@ -1,3 +1,18 @@
+/* .item-list {
+    display: flex;
+    width: 100vw;
+} */
+
+.item {
+    display: inline-block;
+}
+.item-image {
+    width: 200px;
+    height: auto;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Frijole&display=swap');
+
 .item:hover {
     cursor: pointer;
     filter: drop-shadow(5px 5px 5px rgb(255 255 0));
@@ -9,11 +24,6 @@
 
 .selected-item {
     filter: brightness(200%) drop-shadow(5px 5px 5px rgb(0 255 0));
-}
-
-@font-face {
-    font-family: customfont;
-    src = url(WolvesRuin.ttf);
 }
 
 .hmpg {
@@ -134,14 +144,14 @@ button {
     z-index:2;
     position: absolute;
     left: 30%;
-    bottom: 10%;
+    bottom: 20%;
 }
 
 .button2 {
     z-index:2;
     position: absolute;
     right: 30%;
-    bottom: 10%;
+    bottom: 20%;
     margin-left: 10px;
 }
 

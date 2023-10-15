@@ -29,17 +29,29 @@ function checkCookie() {
     }
 }
 
-
-
 function setCookie(cname, cvalue, exdays) {
     if (getCookie(cname) === ('true')) {
-        console.log("C")
-        document.cookie = cname + '=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+        deleteCookie(cname);
         return;
     }
+    console.log("Adding", cname, "to list");
     const d = new Date();
     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
     let expires = "expires="+d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
     // renderItems()
+}
+
+function deleteAllCookies() {
+    let ca = document.cookie.split(';');
+    for(let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        deleteCookie(ca[i]);
+    }
+}
+
+function deleteCookie(cname) {
+    console.log("Deleting", cname, "from list");
+    document.cookie = cname + '=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+    return;
 }
