@@ -4,6 +4,8 @@ body {
 h1 {
     color: black;
     font-family: 'Frijole';
+    display: flex;
+    justify-content: center;
 }
 p {
     color: black;
@@ -11,7 +13,12 @@ p {
 a {
     text-decoration : none;
 }
+
 button {
+    display: flex;
+    justify-content: center;
+}
+/* button {
     background-color: white;
     width: 200px;
     font-size: 20px;
@@ -21,7 +28,7 @@ button {
     color:black;
     cursor: pointer;
     margin-top: 670px;
-}
+} */
 
 .button1 {
     margin-left: 550px;
