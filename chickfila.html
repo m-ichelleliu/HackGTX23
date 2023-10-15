@@ -13,7 +13,7 @@
 
 <body>
 
-    <div class="box"><div class="box-text">You arrive at Chick-Fil-A.</div></div>
+    <div class="box"><div class="box-text">You find yourself welcomed by the irresistible aroma of Chick-Fil-A.</div></div>
     
     <a>
         <button class="buttonNext">Next</button>
@@ -36,14 +36,9 @@
           
           function checkLaptop() {
             if (hasCookie("item-wallet")) {
-              console.log("You have your wallet!");
               window.location.replace("/chickfilasuccess.html");
             } else {
-              if (hasCookie("visited-dhall")) {
-                window.location.replace("/gameoverstarve.html");
-              } else {
-                window.location.replace("/forget.html");
-              }
+              window.location.replace("/forget.html");
             }
           } 
         

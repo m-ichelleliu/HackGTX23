@@ -1,22 +1,53 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <link rel="stylesheet" href="style.css">
   <style>
     body {
-      background-image: url("Images_Folder/4_lunch_fail_forgot.png");
+      background-image: url("Images_Folder/4_lunch_fail_forgot_smth.png");
       background-size: cover;
     }
   </style>
+  <script src="script.js" defer> </script>
 </head>
 
 <body>
 
-    <div class="box"><div class="box-text">You forget your student ID, so you decide to go to Chick-Fil-A instead...</div></div>
+    <div class="box"><div class="box-text">Oh no, I can't get into the dining hall because I forgot to bring my student ID this morning! I guess it's Chick-Fil-A instead for me...</div></div>
     
-    <a href="/chickfila.html">
+    <a>
         <button class="buttonNext">Next</button>
     </a>
 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+      function getCookie(cname) {
+          let name = cname + "=";
+          let ca = document.cookie.split(';');
+          for(let i = 0; i < ca.length; i++) {
+              let c = ca[i];
+              while (c.charAt(0) == ' ') {
+              c = c.substring(1);
+              }
+              if (c.indexOf(name) == 0) {
+              return c.substring(name.length, c.length);
+              }
+          }
+          return "";
+      }
+      function hasCookie(cname) {
+          return getCookie(cname) === ('true');
+      }
+      $(".buttonNext").click(checkLaptop);
+         
+      function checkLaptop() {
+        if (hasCookie('visited_chickfila')) {
+          window.location.replace("/gameoverstarve.html");
+        } else {
+          window.location.replace("/chickfila.html");
+        }
+      }
+
+    </script>
 </body>
 </html>
