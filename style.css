@@ -149,6 +149,12 @@ button {
     background-image: url("Images_Folder/textbox.png");
     background-size: cover;
     margin: auto;
+
+}
+
+.box-text {
+    padding: 50px;
+    padding-top: 100px;
 }
 
 .button1 {
