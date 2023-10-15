@@ -26,7 +26,11 @@
     </head>
 
 <body>
-    <div class="box">Your'e safe</div>
+  <div class="box">
+    <div class="box-text">
+      After running around classes and all this rain, I'm hecka thirsty. I don't wanna be one of the 46.4% of college students who are dehydrated...
+    </div>
+    </div>
 
         <button class="buttonNext">Next</button>
 
@@ -35,7 +39,7 @@
     $(".buttonNext").click(checkWater);
   
     function checkWater() {
-      if (hasCookie("item-water")) {
+      if (hasCookie("item-bottle")) {
         console.log("You have your water!");
         window.location.replace("watersuccess.html");
       } else {
