@@ -11,6 +11,8 @@
     height: auto;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Frijole&display=swap');
+
 .item:hover {
     cursor: pointer;
     filter: drop-shadow(5px 5px 5px rgb(255 255 0));
